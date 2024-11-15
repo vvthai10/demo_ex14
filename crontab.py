@@ -57,7 +57,7 @@ def scheduled_job_chat_monthly_aggregate():
     month_object = date_object.strftime("%Y_%m")
 
     input_path = f"hdfs://localhost:9000/root/chat_hourly_agg/{month_object}"
-    input_path="/root/chat_hourly_agg/2024_11_13/part-00001-5b931710-ec7f-4c33-aa35-c842edc4bb76-c000.snappy.parquet"
+    # input_path="/root/chat_hourly_agg/2024_11_13/part-00001-5b931710-ec7f-4c33-aa35-c842edc4bb76-c000.snappy.parquet"
 
     # Check input_path exists:
     if not checkFileInput(input_path):
